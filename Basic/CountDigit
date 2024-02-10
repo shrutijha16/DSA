@@ -1,0 +1,17 @@
+import java.util.*;
+public class CountDigit {
+    public static void main(String args[]) {
+        Scanner s= new Scanner (System.in);
+        int n=s.nextInt();
+        int d= s.nextInt();
+        int count=0;
+        while(n!=0){
+            int  digit=n%10;
+           if(digit==d){
+               count++;
+           }
+          n=n/10;
+        }
+       System.out.print(count);
+    }
+}
